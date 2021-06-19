@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+  <body>
+    <div id="impress">
+        <div class="step letter" data-x="0" data-y="0">
+            <h1 style="text-align: center;">Bienvenidos</h1>
+            <h2>Nombre del Alumno: Juan José Hernández Llamas</h2>
+            <h3>Tema: React JS</h3>
+        </div>        
+        <div class="step letter" data-x="1100" data-y="300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
+        </div>
+        <div class="step letter" data-x="500" data-y="1000">
+            <h1>React es Declarativo</h1>
+            <p>
+                React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
+                <br />
+                Las vistas declarativas hacen que tu código sea más predecible, por lo tanto, fácil de depurar.
+            </p>
+        </div>
+        <div class="step letter" data-x="250" data-y="-500">
+            <h1>Basado en componentes</h1>
+            <p>
+                Crea componentes encapsulados que manejen su propio estado, y conviértelos en interfaces de usuario complejas.
+                <br />
+                Ya que la lógica de los componentes está escrita en JavaScript y no en plantillas, puedes pasar datos de forma sencilla a través de tu aplicación y mantener el estado fuera del DOM.
+            </p>
+        </div>
+        <div class="step letter" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-10" data-rotate-z="10" data-scale="4">
+            <h1>Aprende una vez, escríbelo donde sea</h1>
+            <p>
+                En React no dejamos fuera al resto de tus herramientas tecnológicas, así que podrás desarrollar nuevas características sin necesidad de volver a escribir el código existente.
+            </p>
+        </div>
+        <div class="step final" data-x="250" data-y="3300" data-scale="2">
+            Esto y mucho más se puede hacer con impress.js, sólo es cosa de revisar la
+            documentación de la herramienta, disponible en el siguiente enlace:
+            <a href="https://github.com/impress/impress.js" target="_blank">Documentación impress.js</a>
+        </div>
+    </div>
+    <%=htmlWebpackPlugin.tags.bodyTags %>
+  </body>
+</html>
